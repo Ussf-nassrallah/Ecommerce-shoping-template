@@ -1,14 +1,14 @@
 import React from 'react';
+import Logo from '../assets/Logo.png';
 import { FiSearch } from 'react-icons/fi';
-import { MdClose } from 'react-icons/md'
+import { MdClose } from 'react-icons/md';
 import '../styles/layout/Navbar.scss';
 
 const Navbar = () => {
   return (
     <nav className="header">
       <div className="header__logo">
-        {/* <img src="" alt="" className="header__logo-img" /> */}
-        Choopka
+        <img src={Logo} alt="" className="header__logo-img" />
       </div>
 
       <ul className="header__links">

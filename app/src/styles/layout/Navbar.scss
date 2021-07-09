@@ -3,10 +3,15 @@
   align-items: center;
 }
 
+$ml-1: 1.5rem;
+$mr-1: 1.5rem;
+$mx-1: 1.5rem;
+
 .header {
   @extend %flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 0 1rem;
+  border-bottom: 1px solid #EDEDF0;
 
   &__links,
   &__search,
@@ -16,9 +21,10 @@
 
   &__links {
     li {
-      margin-left: 1rem;
-
-      // background-color: yellow;
+      &:first-child {
+        margin-left: .6rem !important;
+      }
+      margin-left: $ml-1;
       a {
         color: #5A5B6A;
       }
@@ -28,11 +34,10 @@
   &__search {
     flex: 1;
     justify-content: space-between;
-    border: 1px solid #ccc;
     padding: .5rem 1rem;
-    margin: 0 1rem;
+    margin: 0 $mx-1;
     border-radius: 30px;
-    background: #F6F6F6;
+    background: #EDEDF0;
 
     div {
       @extend %flex;
@@ -48,8 +53,7 @@
     }
 
     .searchIcon {
-      margin-right: 1rem;
-
+      margin-right: .5rem;
     }
   }
 
@@ -59,15 +63,22 @@
 
   &__userOptions {
     .btn {
-      color: #2264D1;
-      border: 1px solid #ccc;
-      background-color: #fff;
       border-radius: 6px;
       text-transform: capitalize;
       padding: .5rem .6rem;
-      margin-left: 1rem;
+      margin-left: $ml-1;
 
-      &-primary {}
+      &-primary {
+        color: #fff;
+        border: 1px solid #2264D1;
+        background-color: #2264D1;
+      }
+
+      &-secondary {
+        color: #2264D1;
+        border: 1px solid #EDEDF0;
+        background-color: #fff;
+      }
     }
   }
 }
