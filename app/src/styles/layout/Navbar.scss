@@ -24,7 +24,9 @@ $mx-1: 1.5rem;
       &:first-child {
         margin-left: .6rem !important;
       }
+
       margin-left: $ml-1;
+
       a {
         color: #5A5B6A;
       }
@@ -63,22 +65,7 @@ $mx-1: 1.5rem;
 
   &__userOptions {
     .btn {
-      border-radius: 6px;
-      text-transform: capitalize;
-      padding: .5rem .6rem;
       margin-left: $ml-1;
-
-      &-primary {
-        color: #fff;
-        border: 1px solid #2264D1;
-        background-color: #2264D1;
-      }
-
-      &-secondary {
-        color: #2264D1;
-        border: 1px solid #EDEDF0;
-        background-color: #fff;
-      }
     }
   }
 }

@@ -4,3 +4,24 @@
   margin: 0 auto;
   padding: 0 1em;
 }
+
+// Components
+.btn {
+  border-radius: 6px;
+  text-transform: capitalize;
+  padding: .5rem .6rem;
+  font-family: 'Roboto', sans-serif;
+  font-size: .9rem;
+
+  &-primary {
+    color: #fff;
+    border: 1px solid #2264D1;
+    background-color: #2264D1;
+  }
+
+  &-secondary {
+    color: #2264D1;
+    border: 1px solid #EDEDF0;
+    background-color: #fff;
+  }
+}

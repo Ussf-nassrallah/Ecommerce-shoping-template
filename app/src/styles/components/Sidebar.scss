@@ -1,0 +1,36 @@
+@import '../helpers/helpers';
+
+.sidebar {
+  margin-right: 2rem;
+  &__btn {
+    border: 1px solid $primary-clr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    width: 180px;
+
+    margin-bottom: 2rem;
+
+    .icon {
+      position: absolute;
+      left: .6rem;
+    }
+  }
+
+  ul {
+    .sc {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      margin-bottom: .8rem;
+
+      .arrowIcon {
+        color: $primary-clr;
+        font-size: 1.1rem;
+      }
+    }
+  }
+}
