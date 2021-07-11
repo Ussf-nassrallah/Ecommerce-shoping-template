@@ -43,11 +43,11 @@ const items = [
     id: 9,
     iconSrc: "../images/icons/electrical.svg",
     name: "Electrical Tools",
-    itemCtaegories: {
-      c1: "Cell Phones & Smartphones",
-      c2: "Cell Phone Accessories",
-      c3: "Cell Phone Gatgets",
-    }
+    // itemCtaegories: {
+    //   c1: "Cell Phones & Smartphones",
+    //   c2: "Cell Phone Accessories",
+    //   c3: "Cell Phone Gatgets",
+    // }
   },
   {
     id: 10,

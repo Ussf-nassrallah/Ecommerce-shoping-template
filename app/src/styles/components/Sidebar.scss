@@ -2,6 +2,9 @@
 
 .sidebar {
   margin-right: 2rem;
+  padding-right: 2rem;
+  border-right: 2px solid #EDEDF0;
+
   &__btn {
     border: 1px solid $primary-clr;
     display: flex;

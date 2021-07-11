@@ -10,7 +10,7 @@
   border-radius: 6px;
   text-transform: capitalize;
   padding: .5rem .6rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: .9rem;
 
   &-primary {
@@ -21,7 +21,13 @@
 
   &-secondary {
     color: #2264D1;
-    border: 1px solid #EDEDF0;
+    border: 1px solid #2264D1;
+    background-color: #fff;
+  }
+
+  &-slc {
+    color: #787885;
+    border: 1px solid #787885;
     background-color: #fff;
   }
 }

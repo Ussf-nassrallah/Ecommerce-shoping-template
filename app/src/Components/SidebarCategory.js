@@ -6,11 +6,11 @@ const SidebarCategory = ({ id, name, itemCtaegories }) => {
     <li className="sc">
       <p className="sc__name">{name}</p>
       <RiArrowRightSLine className="arrowIcon" />
-      <ul>
+      {/* <ul>
         {
           itemCtaegories.map(itemCtaegory => <li>{itemCtaegory}</li>)
         }
-      </ul>
+      </ul> */}
     </li>
   )
 }
