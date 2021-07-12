@@ -1,18 +1,43 @@
-import React from 'react'
-import { RiArrowRightSLine } from 'react-icons/ri'
+import React, { useState } from 'react';
+import { RiArrowRightSLine, RiArrowDownSLine } from 'react-icons/ri';
 
-const SidebarCategory = ({ id, name, itemCtaegories }) => {
+const SidebarCategory = ({ name, subCategory }) => {
+  const [Arrow, setArrow] = useState(false);
+  const [showCategory, setShowCategory] = useState(false);
+
+  const toggleCategory = () => {
+    setArrow(!Arrow);
+    setShowCategory(!showCategory);
+  }
+
+  const arrowHandeler = (array, arrow) => {
+    if (array.length > 0 && arrow){
+      return <RiArrowDownSLine className="arrowIcon" />
+    } else if(array.length === 0) {
+      return <RiArrowRightSLine className="arrowIcon hide" />
+    } else if(array.length > 0 && !arrow){
+      return <RiArrowRightSLine className="arrowIcon" />
+    }
+  }
+
+
   return (
-    <li className="sc">
-      <p className="sc__name">{name}</p>
-      <RiArrowRightSLine className="arrowIcon" />
-      {/* <ul>
+    <li className="sc" onClick={toggleCategory} >
+      <p className="sc__name">
+        {name}
+      </p>
+      {arrowHandeler(subCategory, Arrow)}
+      <ul className={showCategory ? "subCategory show" : "subCategory hide"}>
         {
-          itemCtaegories.map(itemCtaegory => <li>{itemCtaegory}</li>)
+          subCategory.map((ele, index) => <li
+            key={index}
+            className="subCategory__item">
+              {ele.name}
+          </li>)
         }
-      </ul> */}
+      </ul>
     </li>
   )
 }
 
-export default SidebarCategory
+export default SidebarCategory;

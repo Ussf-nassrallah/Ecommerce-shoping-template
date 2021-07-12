@@ -7,7 +7,29 @@ const items = [
   {
     id: 2,
     iconSrc: "../images/icons/entertainment.svg",
-    name: "Entertainment"
+    name: "Entertainment",
+    subCategory: [
+      {
+        id: "subc1",
+        name: "Action Figures & Statues"
+      },
+      {
+        id: "subc2",
+        name: "Arts & Crafts"
+      },
+      {
+        id: "subc3",
+        name: "Baby & Toddler Toys"
+      },
+      {
+        id: "subc4",
+        name: "Building Toys"
+      },
+      {
+        id: "subc5",
+        name: "Dolls & Accessories"
+      }
+    ]
   },
   {
     id: 3,
@@ -43,11 +65,6 @@ const items = [
     id: 9,
     iconSrc: "../images/icons/electrical.svg",
     name: "Electrical Tools",
-    // itemCtaegories: {
-    //   c1: "Cell Phones & Smartphones",
-    //   c2: "Cell Phone Accessories",
-    //   c3: "Cell Phone Gatgets",
-    // }
   },
   {
     id: 10,
@@ -62,7 +79,29 @@ const items = [
   {
     id: 12,
     iconSrc: "../images/icons/toys.svg",
-    name: "Toys & Entertainment"
+    name: "Toys & Entertainment",
+    subCategory: [
+      {
+        id: "subc1",
+        name: "Action Figures & Statues"
+      },
+      {
+        id: "subc2",
+        name: "Arts & Crafts"
+      },
+      {
+        id: "subc3",
+        name: "Baby & Toddler Toys"
+      },
+      {
+        id: "subc4",
+        name: "Building Toys"
+      },
+      {
+        id: "subc5",
+        name: "Dolls & Accessories"
+      }
+    ]
   }
 ];
 

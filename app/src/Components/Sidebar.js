@@ -20,7 +20,7 @@ const Sidebar = () => {
             Categories.map(category => <SidebarCategory 
               key={category.id}
               name={category.name}
-              itemCtaegories={category.itemCtaegories}
+              subCategory = {category.subCategory ? category.subCategory : []}
             />)
           }
         </ul>

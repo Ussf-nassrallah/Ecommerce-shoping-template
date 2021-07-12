@@ -25,14 +25,36 @@
   ul {
     .sc {
       display: flex;
-      align-items: center;
       justify-content: space-between;
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
 
       margin-bottom: .8rem;
 
       .arrowIcon {
         color: $primary-clr;
         font-size: 1.1rem;
+        position: absolute;
+        right: 0;
+      }
+
+      .subCategory {
+        padding-left: 1rem;
+        padding-top: .5rem;
+
+        &__item {
+          color: gray;
+          padding-bottom: .7rem;
+
+          &:first-child {
+            padding-top: .5rem;
+          }
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+        }
       }
     }
   }
